@@ -1,0 +1,17 @@
+- slider should change rabi frequency
+- play button to start playing sound
+
+
+reltime version
+- read current resonant rabi frequency
+- recompute probability curve
+- convert to audio
+- play and loop the sound
+- redraw plot 
+
+- 440 Hz for ground state
+- 660 Hz for excited state
+
+- block size is number of samples per unit time
+- smaller block size has lower latency, but larger cpu overhead
+- larger blockside is more stable but slightly less responsive
