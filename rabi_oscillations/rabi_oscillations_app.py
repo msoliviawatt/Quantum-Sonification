@@ -114,7 +114,7 @@ class RabiSonifier:
         self.detuning_value = ttk.Label(controls, text = f"{self.detuning:.2f}")
         self.detuning_value.grid(row = 2, column = 2, sticky = "w")
 
-        # bolume slider
+        # volume slider
         ttk.Label(controls, text = "Volume").grid(row = 3, column = 0, sticky = "w")
         self.volume_var = tk.DoubleVar(value = self.master_volume)
         self.volume_scale = ttk.Scale(
