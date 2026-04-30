@@ -2,7 +2,7 @@ import numpy as np
 
 class RabiModel:
     def probabilities(self, t, omega, detuning):
-        omega_eff = np.aqrt(omega**2 + detuning**2)
+        omega_eff = np.sqrt(omega**2 + detuning**2)
 
         if (omega_eff < 1e-12):
             prob_excited = np.zeros_like(t)
