@@ -31,7 +31,7 @@ class PhaseShifterModel:
         phase = np.pi * voltage / self.v_pi
         return phase
     
-class ResonatorMode:
+class ResonatorModel:
     def enhancement(self, drive_freq, resonance_freq, q_factor):
         ratio = drive_freq / resonance_freq
         denominator = np.sqrt((1 - ratio**2) **2 + (ratio / q_factor) **2)
