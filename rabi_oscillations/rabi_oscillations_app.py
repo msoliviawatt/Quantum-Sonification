@@ -162,8 +162,8 @@ class RabiSonifier:
         self.ax.set_ylim(-0.02, 1.02)
         self.ax.grid(True, alpha = 0.3)
 
-        self.line_pg, = self.ax.plot([], [], label = "P_g(t)")
-        self.line_pe, = self.ax.plot([], [], label = "P_e(t)")
+        self.line_pg, = self.ax.plot([], [], label = "Prob_g(t)")
+        self.line_pe, = self.ax.plot([], [], label = "Prob_e(t)")
         self.ax.legend(loc="upper right")
 
         self.canvas = FigureCanvasTkAgg(fig, master = outer)
