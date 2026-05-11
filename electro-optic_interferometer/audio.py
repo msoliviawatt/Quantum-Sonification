@@ -4,7 +4,7 @@ import numpy as np
 class Audio:
 
     def __init__(self, sample_rate = 44100):
-        self.sample_rate = self.sample_rate
+        self.sample_rate = sample_rate
 
         self.phase_g = 0.0
         self.phase_e = 0.0
@@ -35,8 +35,8 @@ class Audio:
 
         frames = len(prob_g)
 
-        ground_audio = self.phase_g = self._oscillator(self.freq_groud, frames, self.phase_g)
-        excited_audio = self.phase_e = self._oscillator(self.freq_excited, frames, self.phase_e)
+        ground_audio, self.phase_g = self._oscillator(self.freq_groud, frames, self.phase_g)
+        excited_audio, self.phase_e = self._oscillator(self.freq_excited, frames, self.phase_e)
 
         mono = prob_g * ground_audio + prob_e * excited_audio
         mono = np.tanh(1.2 * mono)
