@@ -11,4 +11,6 @@ Or
 py .\main.py
 ```
 
-This might also vary if you are using a different version of Python. Long story short, you need to run the file from the terminal and figure out what syntax to use for your operating system.
+The syntax might vary if you are using a different version of Python.
+
+You should also be able to press the "Run Code" button at the top of the file if using Visual Studio Code
